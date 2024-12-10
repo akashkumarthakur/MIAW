@@ -14,6 +14,18 @@
         embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Brand" : "chrysler","Source" : "eShop"});
     });
     </script>
+     <script type='text/javascript'>
+	window.addEventListener("onEmbeddedMessagingReady", e => {
+	  embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+		// List the pre-chat field names with the value and whether
+		// it's editable in the pre-chat form.
+		"_subject": {
+		  "value": "Enquiry",
+		  "isEditableByEndUser": false
+		}
+	  });
+	});
+    </script>
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {

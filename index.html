@@ -12,7 +12,7 @@
         console.log("Received the onEmbeddedMessagingReady event…");
     
         // Send data to Salesforce
-        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Brand" : "chrysler","Source" : "eShop"});
+        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Brand" : "chrysler,dodge","Source" : "eShop"});
 	embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
 		// List the pre-chat field names with the value and whether
 		// it's editable in the pre-chat form.
